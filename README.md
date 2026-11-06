@@ -29,7 +29,8 @@ portfolio pelayo/
    - [Uniovi eTech-Racing (Formula Student Electric)](https://linkedin.com/in/pelayo-pache-rodriguez) (Multi-layer PCB in Altium Designer, CAN Bus 500 kbps, VHDL Vivado).
    - [Smart Home Domotics ESP32-C3 SuperMini](https://github.com/pprguez2005-byte/Domotica-ESP32-C3) (RISC-V 32-bit embedded web server, WebSockets, OpenSpec).
    - [Electric Vehicle Architecture in SysML v2](https://github.com/pprguez2005-byte/Coche-sysml-) (MBSE, state machines, powertrain & battery modes).
-   - [ART – Asturias Rural Tech Booking Platform](https://github.com/pprguez2005-byte/El-rincon-del-asador) (Top 12 Innovation Finalist in Uniovi Emprende).
+   - [ART – Asturias Rural Tech Booking Platform](https://github.com/pemapeast/ART-SANTADER) (Top 12 Innovation Finalist in Uniovi Emprende & Banco Santander).
+   - [CERAMIUM – Industrial Catalog & Commercial Transformation](https://github.com/pemapeast/CERAMIUM) (Commercial pilot in Pola de Laviana, achieving 4x growth in direct calls).
    - [Uniovi Robotics Workshop GenAI](https://github.com/pprguez2005-byte/uniovi-robotics-workshop-genai) (Python, Angular, MATLAB Engine API).
 3. **LinkedIn & Socials Access**:
    - LinkedIn: [linkedin.com/in/pelayo-pache-rodriguez](https://linkedin.com/in/pelayo-pache-rodriguez)

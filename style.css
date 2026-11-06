@@ -1,6 +1,5 @@
 /* ==========================================================================
-   Pelayo Pache Rodríguez - Engineering Portfolio
-   Aesthetic inspired by Tomasz Gajda (Figma Community Design System)
+   Pelayo Pache Rodríguez - Engineering Portfolio Stylesheet
    ========================================================================== */
 
 :root {
@@ -177,7 +176,7 @@ a {
 }
 
 /* ==========================================================================
-   HERO SECTION (TOMASZ GAJDA SPLIT DESIGN)
+   HERO SECTION
    ========================================================================== */
 
 .hero-section {
@@ -512,7 +511,7 @@ a {
 }
 
 /* ==========================================================================
-   ABOUT ME SECTION (TOMASZ GAJDA 3-CARD CAROUSEL / GRID)
+   ABOUT ME SECTION
    ========================================================================== */
 
 .about-section {
@@ -666,7 +665,7 @@ a {
 }
 
 /* ==========================================================================
-   FEATURED PROJECTS SECTION (TOMASZ GAJDA SHOWCASE)
+   FEATURED PROJECTS SECTION
    ========================================================================== */
 
 .projects-section {
@@ -999,7 +998,7 @@ a {
 }
 
 /* ==========================================================================
-   FOOTER (TOMASZ GAJDA FOOTER)
+   FOOTER
    ========================================================================== */
 
 .footer-tg {

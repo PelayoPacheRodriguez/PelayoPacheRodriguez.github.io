@@ -4,634 +4,731 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pelayo Pache Rodríguez | Engineering Portfolio</title>
-    <meta name="description" content="Portfolio of Pelayo Pache Rodríguez - Industrial Electronics and Automation Engineering Student. Embedded systems, space payload testbeds, automotive electronics, and IoT.">
-    <!-- Open Graph / LinkedIn / Social Media Meta Tags -->
+    <meta name="description" content="Portfolio of Pelayo Pache Rodríguez - Industrial Electronics & Automation Engineer. Embedded systems, spacecraft microgravity testbed, Formula Student LV electronics, and IoT.">
+
+    <!-- Open Graph / LinkedIn Social Tags -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pelayopacherodriguez.github.io/">
     <meta property="og:title" content="Pelayo Pache Rodríguez | Engineering Portfolio">
     <meta property="og:description" content="Industrial Electronics & Automation Engineer. Embedded systems, satellite microgravity testbeds, Formula Student LV electronics, and IoT.">
     <meta property="og:image" content="https://pelayopacherodriguez.github.io/profile.png">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Pelayo Pache Rodríguez | Engineering Portfolio">
-    <meta name="twitter:description" content="Industrial Electronics & Automation Engineer. Embedded systems, satellite microgravity testbeds, Formula Student LV electronics, and IoT.">
-    <meta name="twitter:image" content="https://pelayopacherodriguez.github.io/profile.png">
-    <!-- Font Awesome 6 Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Google Fonts: Poppins, Montserrat & JetBrains Mono (Tomasz Gajda Typography System) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="main-layout">
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-box">PP</span>
+                <span class="logo-text">PELAYO PACHE</span>
+            </a>
 
-        <!-- ================= LEFT COLUMN ================= -->
-        <aside class="left-column">
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">About me</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Portfolio</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="btn-nav">Contact Me</a>
+            </nav>
 
-            <!-- CONTACT SECTION -->
-            <section class="card contact">
-                <h2><i class="fa-solid fa-address-card section-icon"></i> Contact</h2>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation menu" onclick="document.querySelector('.nav-links').classList.toggle('nav-active')">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
 
-                <div class="contact-item">
-                    <span><i class="fa-brands fa-linkedin"></i>LinkedIn</span>
-                    <a href="https://linkedin.com/in/pelayo-pache-rodriguez" target="_blank" rel="noopener noreferrer">
-                        Pelayo Pache Rodríguez
+    <!-- ================= HERO SECTION (TOMASZ GAJDA SPLIT HERO) ================= -->
+    <section class="hero-section">
+        <div class="hero-container">
+            
+            <div class="hero-left">
+                <span class="hero-greeting">Hi, I am</span>
+                <h1 class="hero-name">Pelayo Pache</h1>
+                <h2 class="hero-role">Industrial Electronics & Automation Engineer</h2>
+                
+                <p class="hero-bio">
+                    Specialized in <strong>Embedded Systems</strong>, <strong>Aerospace Testbeds</strong>, and <strong>Hardware Design</strong>. 
+                    Proven experience in multi-layer PCB design (Altium Designer), real-time microcontroller firmware (C/C++), 
+                    CAN Bus telemetry, and Model-Based Systems Engineering (MBSE / SysML v2).
+                </p>
+
+                <!-- Social Icons Bar -->
+                <div class="hero-socials">
+                    <a href="https://linkedin.com/in/pelayo-pache-rodriguez" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="social-icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/PelayoPacheRodriguez" target="_blank" rel="noopener noreferrer" title="GitHub (Personal)" class="social-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://github.com/pemapeast" target="_blank" rel="noopener noreferrer" title="GitHub (Projects)" class="social-icon">
+                        <i class="fa-solid fa-code-fork"></i>
+                    </a>
+                    <a href="mailto:pprguez2005@gmail.com" title="Email" class="social-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="tel:+34699632922" title="Phone" class="social-icon">
+                        <i class="fa-solid fa-phone"></i>
                     </a>
                 </div>
 
-                <div class="contact-item">
-                    <span><i class="fa-brands fa-github"></i>GitHub (Personal)</span>
-                    <a href="https://github.com/PelayoPacheRodriguez" target="_blank" rel="noopener noreferrer">
-                        PelayoPacheRodriguez
+                <!-- Hero Buttons -->
+                <div class="hero-actions">
+                    <a href="PelayoPacheRodriguez_CV.pdf" download="CV_PelayoPacheRodriguez.pdf" class="btn-tg btn-tg-primary">
+                        <i class="fa-solid fa-download"></i> Download Resume
+                    </a>
+                    <a href="#projects" class="btn-tg btn-tg-secondary">
+                        <i class="fa-solid fa-laptop-code"></i> View Projects
                     </a>
                 </div>
+            </div>
 
-                <div class="contact-item">
-                    <span><i class="fa-brands fa-github"></i>GitHub (Projects)</span>
-                    <a href="https://github.com/pemapeast" target="_blank" rel="noopener noreferrer">
-                        pemapeast
-                    </a>
-                </div>
-
-                <div class="contact-item">
-                    <span><i class="fa-solid fa-envelope"></i>Email</span>
-                    <a href="mailto:pprguez2005@gmail.com">
-                        pprguez2005@gmail.com
-                    </a>
-                </div>
-
-                <div class="contact-item">
-                    <span><i class="fa-solid fa-phone"></i>Phone</span>
-                    <a href="tel:+34699632922">
-                        (+34) 699 63 29 22
-                    </a>
-                </div>
-
-                <div class="contact-item">
-                    <span><i class="fa-solid fa-location-dot"></i>Location</span>
-                    <span class="location-text">Oviedo / Gijón, Spain</span>
-                </div>
-            </section>
-
-            <!-- TECH STACK & COMPETENCIES -->
-            <section class="card tech-stack">
-                <h2><i class="fa-solid fa-microchip section-icon"></i> Technical Stack</h2>
-
-                <div class="tech-group">
-                    <span class="tech-group-title">Hardware & EDA</span>
-                    <div class="skills">
-                        <span>Altium Designer (Advanced)</span>
-                        <span>KiCAD</span>
-                        <span>Multi-layer PCB Design</span>
-                        <span>SMD & THT Soldering</span>
-                        <span>CAN Bus (500 kbps)</span>
-                        <span>SPI / I2C / UART</span>
+            <div class="hero-right">
+                <div class="hero-card-frame">
+                    <div class="hero-photo-wrapper">
+                        <img src="profile.png" alt="Pelayo Pache Rodríguez" class="hero-photo">
+                        <div class="status-badge" title="Open to engineering opportunities">
+                            <span class="status-dot"></span> Open to Opportunities
+                        </div>
+                    </div>
+                    <div class="hero-tag-box">
+                        <p class="hero-tag-text"><i class="fa-solid fa-location-dot"></i> Oviedo & Gijón, Spain</p>
+                        <p class="hero-subtag-text">LJMU Exchange · First Class Honours</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="tech-group">
-                    <span class="tech-group-title">Embedded Systems & Firmware</span>
-                    <div class="skills">
-                        <span>C / C++</span>
-                        <span>ESP32 & RISC-V</span>
-                        <span>STM32 (ARM Cortex)</span>
-                        <span>PIC Microcontrollers (MPLAB)</span>
-                        <span>VHDL (Xilinx Vivado)</span>
-                        <span>Siemens PLCs (TIA Portal)</span>
-                        <span>Timer ISRs & FreeRTOS</span>
+        </div>
+    </section>
+
+    <!-- ================= SIGNATURE SEPARATOR BANNER ================= -->
+    <section class="quote-banner">
+        <div class="banner-container">
+            <span class="banner-eyebrow">ENGINEERING PHILOSOPHY</span>
+            <p class="banner-quote">
+                "Combining rigorous mathematical control, microsecond embedded determinism, and reliable hardware prototyping to bring complex engineering systems to life."
+            </p>
+            <div class="banner-separator">
+                <span class="sep-line"></span>
+                <span class="sep-icon"><i class="fa-solid fa-microchip"></i></span>
+                <span class="sep-line"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT ME SECTION ================= -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            
+            <div class="section-header">
+                <h2 class="section-title">ABOUT ME</h2>
+                <div class="separator-bar"></div>
+                <p class="section-subtitle">
+                    Passionate about embedded hardware, aerospace mechanisms, and model-based engineering.
+                </p>
+            </div>
+
+            <div class="about-text-content">
+                <p>
+                    I am an <strong>Industrial Electronics and Automation Engineering student</strong> at the University of Oviedo (EPI Gijón) 
+                    and completed an exchange year at <strong>Liverpool John Moores University (LJMU, UK)</strong> graduating with 
+                    <strong>Distinction / First Class Honours (9.15/10.0 equivalent)</strong>.
+                </p>
+                <p>
+                    Currently developing my <strong>Bachelor's Thesis (TFG)</strong> in collaboration with the University of León in Aeronautical Systems, 
+                    awarded a competitive <strong>Research Collaboration Grant</strong> by the Ministry of Education to build a 2-DOF microgravity testbed with 
+                    active Input Shaping vibration cancellation. In addition, I have engineered electric single-seater low-voltage electronics in 
+                    <strong>Formula Student</strong> and co-founded an innovation initiative ranked in the <strong>Top 12 of Uniovi Emprende</strong>.
+                </p>
+            </div>
+
+            <!-- Tomasz Gajda 3-Column Focus Cards -->
+            <div class="about-cards-grid">
+                
+                <div class="about-card">
+                    <div class="about-card-icon">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <h3>EMBEDDED HARDWARE</h3>
+                    <p>
+                        Multi-layer PCB design, schematic capture, and DRC verification in <strong>Altium Designer</strong>. 
+                        Microcontroller firmware in <strong>C/C++</strong> (STM32, ESP32, PIC) and digital logic in <strong>VHDL</strong>.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-card-icon">
+                        <i class="fa-solid fa-satellite"></i>
+                    </div>
+                    <h3>CONTROL & AEROSPACE</h3>
+                    <p>
+                        Dynamic modeling with coupled Lagrange equations, <strong>Input Shaping (ZV/ZVD)</strong> real-time algorithms, 
+                        parametric CAD automation with <strong>Autodesk Inventor API</strong>, and MBSE in <strong>SysML v2</strong>.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-card-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3>INNOVATION & SYSTEMS</h3>
+                    <p>
+                        Full-stack booking engine architecture (ART), predictive maintenance sensor prototyping (1st Prize Tresa Ascensores), 
+                        and CAN Bus motorsport telemetry.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= SKILLS SECTION ================= -->
+    <section id="skills" class="skills-section">
+        <div class="section-container">
+            
+            <div class="section-header">
+                <h2 class="section-title">SKILLS & TECHNOLOGIES</h2>
+                <div class="separator-bar"></div>
+                <p class="section-subtitle">
+                    Technical proficiencies, software platforms, and laboratory instrument expertise.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+
+                <!-- Skill Category 1 -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h3>Hardware & EDA</h3>
+                    </div>
+                    <ul class="skill-items">
+                        <li><span class="skill-tag">Altium Designer (Advanced)</span></li>
+                        <li><span class="skill-tag">KiCAD</span></li>
+                        <li><span class="skill-tag">Multi-layer PCB Layout</span></li>
+                        <li><span class="skill-tag">Signal Integrity & EMI</span></li>
+                        <li><span class="skill-tag">CAN Bus (500 kbps)</span></li>
+                        <li><span class="skill-tag">Soldering (SMD & THT)</span></li>
+                        <li><span class="skill-tag">Oscilloscopes & Logic Analyzers</span></li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 2 -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Embedded Systems & Firmware</h3>
+                    </div>
+                    <ul class="skill-items">
+                        <li><span class="skill-tag">C / C++ (Embedded)</span></li>
+                        <li><span class="skill-tag">ESP32 & ESP32-C3 (RISC-V)</span></li>
+                        <li><span class="skill-tag">STM32 (ARM Cortex)</span></li>
+                        <li><span class="skill-tag">Microchip PIC (MPLAB)</span></li>
+                        <li><span class="skill-tag">VHDL (Xilinx Vivado)</span></li>
+                        <li><span class="skill-tag">Timer ISRs & FreeRTOS</span></li>
+                        <li><span class="skill-tag">Siemens PLCs (TIA Portal)</span></li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 3 -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <h3>Control, Modeling & Simulation</h3>
+                    </div>
+                    <ul class="skill-items">
+                        <li><span class="skill-tag">SysML v2 (MBSE)</span></li>
+                        <li><span class="skill-tag">MATLAB & Simulink</span></li>
+                        <li><span class="skill-tag">PLECS & PSIM</span></li>
+                        <li><span class="skill-tag">Input Shaping (ZV / ZVD)</span></li>
+                        <li><span class="skill-tag">Autodesk Inventor (Python API)</span></li>
+                        <li><span class="skill-tag">CATIA / MagicDraw</span></li>
+                    </ul>
+                </div>
+
+                <!-- Skill Category 4 -->
+                <div class="skill-category-card">
+                    <div class="skill-category-header">
+                        <i class="fa-solid fa-terminal"></i>
+                        <h3>Programming & Tools</h3>
+                    </div>
+                    <ul class="skill-items">
+                        <li><span class="skill-tag">Python 3</span></li>
+                        <li><span class="skill-tag">Git / GitHub Workflow</span></li>
+                        <li><span class="skill-tag">WebSockets & REST APIs</span></li>
+                        <li><span class="skill-tag">HTML5 / CSS3 / JavaScript</span></li>
+                        <li><span class="skill-tag">OpenSpec Methodology</span></li>
+                        <li><span class="skill-tag">Linux & Bash</span></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= PROJECTS / PORTFOLIO SECTION ================= -->
+    <section id="projects" class="projects-section">
+        <div class="section-container">
+            
+            <div class="section-header">
+                <h2 class="section-title">FEATURED PROJECTS</h2>
+                <div class="separator-bar"></div>
+                <p class="section-subtitle">
+                    Engineering repositories, aerospace research, hardware prototypes, and digital architectures.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- PROJECT 1: Spacecraft Attitude Control System -->
+                <div class="project-box project-featured">
+                    <div class="project-top">
+                        <div class="project-badge-line">
+                            <span class="tg-badge tg-badge-accent">TFG / Research Grant</span>
+                            <span class="project-links-icons">
+                                <a href="https://github.com/PelayoPacheRodriguez/spacecraft-attitude-control-system" target="_blank" rel="noopener noreferrer" title="View on GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </span>
+                        </div>
+                        <h3 class="project-heading">
+                            <a href="https://github.com/PelayoPacheRodriguez/spacecraft-attitude-control-system" target="_blank" rel="noopener noreferrer">
+                                Spacecraft Attitude Control System (SACS) & Testbed
+                            </a>
+                        </h3>
+                        <p class="project-description">
+                            End-to-end mechatronic design, dynamic modeling, and real-time control of a 2-DOF Cartesian gantry combined with a cable-suspended orientation system to simulate in-orbit microgravity for CubeSat prototypes.
+                        </p>
+                        <ul class="project-bullet-points">
+                            <li>Real-time <strong>Input Shaping (Zero Vibration / ZVD)</strong> filters implemented directly in timer ISRs to eliminate residual pendular swing.</li>
+                            <li>100% parametric CAD chassis generation via Autodesk Inventor's native Python API (<code>adsk.inventor</code>).</li>
+                            <li>ESP32 firmware controlling Trinamic TMC2209 silent stepper drivers via UART with microsecond precision.</li>
+                            <li>Architecture requirements traceability modeled in <strong>SysML v2</strong>.</li>
+                        </ul>
+                    </div>
+                    <div class="project-bottom">
+                        <div class="project-tags">
+                            <span>Input Shaping (ZV/ZVD)</span>
+                            <span>ESP32</span>
+                            <span>C++</span>
+                            <span>Python API</span>
+                            <span>SysML v2</span>
+                            <span>TMC2209</span>
+                        </div>
+                        <a href="https://github.com/PelayoPacheRodriguez/spacecraft-attitude-control-system" target="_blank" rel="noopener noreferrer" class="project-cta-link">
+                            Source Code <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
                     </div>
                 </div>
 
-                <div class="tech-group">
-                    <span class="tech-group-title">Systems, Control & Modeling</span>
-                    <div class="skills">
-                        <span>SysML v2 (MBSE)</span>
-                        <span>MATLAB & Simulink</span>
-                        <span>PLECS & PSIM</span>
-                        <span>Input Shaping (ZV/ZVD)</span>
-                        <span>Autodesk Inventor (Python API)</span>
-                        <span>CATIA / MagicDraw</span>
+                <!-- PROJECT 2: Formula Student LV Electronics -->
+                <div class="project-box">
+                    <div class="project-top">
+                        <div class="project-badge-line">
+                            <span class="tg-badge">Motorsport Engineering</span>
+                            <span class="project-links-icons">
+                                <a href="https://linkedin.com/in/pelayo-pache-rodriguez" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </span>
+                        </div>
+                        <h3 class="project-heading">
+                            <a href="https://linkedin.com/in/pelayo-pache-rodriguez" target="_blank" rel="noopener noreferrer">
+                                Formula Student – Low Voltage (LV) Electronics
+                            </a>
+                        </h3>
+                        <p class="project-description">
+                            Hardware development and low-voltage electrical architecture for the Uniovi eTech-Racing electric single-seater:
+                        </p>
+                        <ul class="project-bullet-points">
+                            <li>Schematic design and multi-layer PCB layout using <strong>Altium Designer</strong> conforming strictly to Formula Student regulations and EMI constraints.</li>
+                        </ul>
+                    </div>
+                    <div class="project-bottom">
+                        <div class="project-tags">
+                            <span>Altium Designer</span>
+                            <span>Multi-layer PCB</span>
+                            <span>Schematic & Routing</span>
+                            <span>Hardware Validation</span>
+                        </div>
+                        <a href="https://linkedin.com/in/pelayo-pache-rodriguez" target="_blank" rel="noopener noreferrer" class="project-cta-link">
+                            Project Details <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
                     </div>
                 </div>
 
-                <div class="tech-group">
-                    <span class="tech-group-title">Software & Tools</span>
-                    <div class="skills">
-                        <span>Python</span>
-                        <span>OpenSpec Methodology</span>
-                        <span>Git / GitHub</span>
-                        <span>WebSockets / REST</span>
-                        <span>Java</span>
-                        <span>R</span>
+                <!-- PROJECT 3: Domótica ESP32-C3 -->
+                <div class="project-box">
+                    <div class="project-top">
+                        <div class="project-badge-line">
+                            <span class="tg-badge">IoT & Embedded</span>
+                            <span class="project-links-icons">
+                                <a href="https://github.com/PelayoPacheRodriguez/Domotica-ESP32-C3" target="_blank" rel="noopener noreferrer" title="View on GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </span>
+                        </div>
+                        <h3 class="project-heading">
+                            <a href="https://github.com/PelayoPacheRodriguez/Domotica-ESP32-C3" target="_blank" rel="noopener noreferrer">
+                                Smart Home Domotics with ESP32-C3 SuperMini
+                            </a>
+                        </h3>
+                        <p class="project-description">
+                            Modular, scalable home automation ecosystem powered by ultracompact <strong>ESP32-C3 (RISC-V 32-bit @ 160MHz)</strong> microcontrollers:
+                        </p>
+                        <ul class="project-bullet-points">
+                            <li>Lightweight asynchronous embedded web server and WebSockets client for real-time telemetry streaming and appliance actuation.</li>
+                            <li>Specification-driven development using <strong>OpenSpec</strong> with regression protection and security boundaries.</li>
+                        </ul>
+                    </div>
+                    <div class="project-bottom">
+                        <div class="project-tags">
+                            <span>ESP32-C3 (RISC-V)</span>
+                            <span>C++ (Arduino)</span>
+                            <span>WebSockets</span>
+                            <span>OpenSpec</span>
+                        </div>
+                        <a href="https://github.com/PelayoPacheRodriguez/Domotica-ESP32-C3" target="_blank" rel="noopener noreferrer" class="project-cta-link">
+                            Source Code <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
                     </div>
                 </div>
-            </section>
 
-            <!-- WORK EXPERIENCE TIMELINE -->
-            <section class="card experience">
-                <h2><i class="fa-solid fa-briefcase section-icon"></i> Experience</h2>
-
-                <div class="timeline">
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="date">Sept. 2026 – Present</span>
-                            <h3>Co-Founder & Lead Technology Developer</h3>
-                            <p class="company">ART – Asturias Rural Tech (Uniovi Emprende)</p>
-                            <p class="desc">
-                                Co-designed the digital architecture & proprietary direct booking engine (ART Portal) 
-                                eliminating 15–25% OTA fees. Validated via commercial pilot with a 4x increase in direct customer contacts.
-                            </p>
+                <!-- PROJECT 4: SysML v2 Electric Vehicle -->
+                <div class="project-box">
+                    <div class="project-top">
+                        <div class="project-badge-line">
+                            <span class="tg-badge">MBSE & Systems</span>
+                            <span class="project-links-icons">
+                                <a href="https://github.com/PelayoPacheRodriguez/Coche-sysml-" target="_blank" rel="noopener noreferrer" title="View on GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </span>
                         </div>
+                        <h3 class="project-heading">
+                            <a href="https://github.com/PelayoPacheRodriguez/Coche-sysml-" target="_blank" rel="noopener noreferrer">
+                                Electric Vehicle Systems Architecture (SysML v2)
+                            </a>
+                        </h3>
+                        <p class="project-description">
+                            Model-Based Systems Engineering (MBSE) formal specification of an electric vehicle's multidisciplinary architecture:
+                        </p>
+                        <ul class="project-bullet-points">
+                            <li>Structural breakdown and state-machine transitions (operation modes: off, ready, driving; battery states: charging, discharging, disconnected).</li>
+                            <li>Dynamic requirements traceability and architectural verification using <strong>SysML v2</strong>.</li>
+                        </ul>
                     </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="date">Sept. 2024 – Mar. 2026</span>
-                            <h3>Hardware & Low Voltage (LV) Electronics Engineer</h3>
-                            <p class="company">Uniovi eTech-Racing (Formula Student)</p>
-                            <p class="desc">
-                                Schematic capture and multi-layer PCB routing in Altium Designer for the electric single-seater LV system. 
-                                Implementation of real-time CAN Bus telemetry (500 kbps) across ECU, BMS, and data loggers.
-                            </p>
+                    <div class="project-bottom">
+                        <div class="project-tags">
+                            <span>SysML v2</span>
+                            <span>MBSE</span>
+                            <span>Systems Engineering</span>
+                            <span>OpenSpec</span>
                         </div>
+                        <a href="https://github.com/PelayoPacheRodriguez/Coche-sysml-" target="_blank" rel="noopener noreferrer" class="project-cta-link">
+                            Source Code <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
                     </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="date">2023 – 2024</span>
-                            <h3>Technical Lead & Hardware Prototyping</h3>
-                            <p class="company">Uniovi Innovation Skills & Tresa Ascensores</p>
-                            <p class="desc">
-                                Developed the industrial data acquisition electronics and sensor integration for predictive maintenance. 
-                                Awarded <strong>1st Prize for Most Innovative Project</strong>.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="date">2022 – Present</span>
-                            <h3>Private Mathematics & Physics Tutor</h3>
-                            <p class="company">Self-employed · Oviedo, Spain</p>
-                            <p class="desc">
-                                One-on-one coaching in calculus, linear algebra, and mechanics for +10 high school & first-year university students.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="date">August 2023</span>
-                            <h3>International Trade Fair Assistant</h3>
-                            <p class="company">EDP (Electricidade de Portugal) – FIDMA</p>
-                            <p class="desc">
-                                Technical communication and customer guidance on renewable energy systems, green hydrogen, and electric mobility.
-                            </p>
-                        </div>
-                    </div>
-
                 </div>
-            </section>
 
-            <!-- CERTIFICATIONS SECTION -->
-            <section class="card experience">
-                <h2><i class="fa-solid fa-certificate section-icon"></i> Certifications & Honors</h2>
-
-                <div class="timeline">
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="date">2026</span>
-                            <h3>Top 12 Innovation Finalist</h3>
-                            <p class="company">Uniovi Emprende & Banco Santander</p>
-                            <p class="desc">Selected among region's top 12 ventures; executive defense before investment tribunal.</p>
+                <!-- PROJECT 5: ART Booking Platform -->
+                <div class="project-box">
+                    <div class="project-top">
+                        <div class="project-badge-line">
+                            <span class="tg-badge tg-badge-accent">Innovation Finalist</span>
+                            <span class="project-links-icons">
+                                <a href="https://github.com/pemapeast/ART-SANTADER" target="_blank" rel="noopener noreferrer" title="View on GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </span>
                         </div>
+                        <h3 class="project-heading">
+                            <a href="https://github.com/pemapeast/ART-SANTADER" target="_blank" rel="noopener noreferrer">
+                                ART – Asturias Rural Tech & Direct Booking Engine
+                            </a>
+                        </h3>
+                        <p class="project-description">
+                            Web architecture and zero-commission direct reservation platform built to disintermediate 15–25% OTA fees for rural accommodations:
+                        </p>
+                        <ul class="project-bullet-points">
+                            <li>Engineered high-conversion responsive booking interface (<a href="https://github.com/pemapeast/ART-HOUSES" target="_blank" rel="noopener noreferrer" style="color: var(--accent); text-decoration: underline;">ART-HOUSES</a> repository).</li>
+                            <li>Ranked in the <strong>Top 12 Innovation Projects</strong> in the Uniovi Emprende startup competition in partnership with Banco Santander.</li>
+                        </ul>
                     </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="date">2025 – 2026</span>
-                            <h3>Academic Excellence Scholarship</h3>
-                            <p class="company">Santander Open Academy</p>
-                            <p class="desc">Merit-based grant awarded for high academic standing during international exchange.</p>
+                    <div class="project-bottom">
+                        <div class="project-tags">
+                            <span>Web Architecture</span>
+                            <span>Booking Engine</span>
+                            <span>HTML5 / CSS3 / JS</span>
+                            <span>pemapeast/ART-SANTADER</span>
                         </div>
+                        <a href="https://github.com/pemapeast/ART-SANTADER" target="_blank" rel="noopener noreferrer" class="project-cta-link">
+                            Source Code <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
                     </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="date">2025</span>
-                            <h3>Artificial Intelligence with Gemini & LLMs</h3>
-                            <p class="company">Santander Open Academy</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="date">2025</span>
-                            <h3>Aeronautical Engineering Job Simulation</h3>
-                            <p class="company">British Airways (Forage)</p>
-                            <p class="desc">Fleet maintenance management, mechanical systems reliability, and flight safety engineering.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="date">2025</span>
-                            <h3>English C1 Professional Proficiency (ELLT)</h3>
-                            <p class="company">University of Oxford / Oxford International Digital Institute</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="date">2022</span>
-                            <h3>Cambridge First Certificate in English (FCE - B2)</h3>
-                            <p class="company">University of Cambridge</p>
-                        </div>
-                    </div>
-
                 </div>
-            </section>
 
-            <!-- EDUCATION TIMELINE -->
-            <section class="card experience">
-                <h2><i class="fa-solid fa-graduation-cap section-icon"></i> Education</h2>
+                <!-- PROJECT 6: CERAMIUM Commercial Transformation -->
+                <div class="project-box">
+                    <div class="project-top">
+                        <div class="project-badge-line">
+                            <span class="tg-badge">Commercial Pilot</span>
+                            <span class="project-links-icons">
+                                <a href="https://github.com/pemapeast/CERAMIUM" target="_blank" rel="noopener noreferrer" title="View on GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </span>
+                        </div>
+                        <h3 class="project-heading">
+                            <a href="https://github.com/pemapeast/CERAMIUM" target="_blank" rel="noopener noreferrer">
+                                CERAMIUM – Industrial Catalog & SEO Transformation
+                            </a>
+                        </h3>
+                        <p class="project-description">
+                            Operational commercial pilot developed for a traditional construction materials enterprise in Pola de Laviana (Asturias) as part of the ART initiative:
+                        </p>
+                        <ul class="project-bullet-points">
+                            <li>Designed digital catalog and mobile-first responsive web storefront.</li>
+                            <li>Local SEO & Google Maps diagnostic overhaul, generating a verified <strong>4x increase</strong> in direct customer calls and contacts.</li>
+                        </ul>
+                    </div>
+                    <div class="project-bottom">
+                        <div class="project-tags">
+                            <span>Digital Architecture</span>
+                            <span>Local SEO & Maps</span>
+                            <span>HTML5 / CSS3</span>
+                            <span>pemapeast/CERAMIUM</span>
+                        </div>
+                        <a href="https://github.com/pemapeast/CERAMIUM" target="_blank" rel="noopener noreferrer" class="project-cta-link">
+                            Source Code <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
 
-                <div class="timeline">
+                <!-- PROJECT 7: Uniovi Robotics Workshop GenAI -->
+                <div class="project-box">
+                    <div class="project-top">
+                        <div class="project-badge-line">
+                            <span class="tg-badge">AI & Robotics</span>
+                            <span class="project-links-icons">
+                                <a href="https://github.com/PelayoPacheRodriguez/uniovi-robotics-workshop-genai" target="_blank" rel="noopener noreferrer" title="View on GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </span>
+                        </div>
+                        <h3 class="project-heading">
+                            <a href="https://github.com/PelayoPacheRodriguez/uniovi-robotics-workshop-genai" target="_blank" rel="noopener noreferrer">
+                                Uniovi Robotics Workshop GenAI & Automation PoCs
+                            </a>
+                        </h3>
+                        <p class="project-description">
+                            Suite of robotic and signal automation proofs-of-concept demonstrating Python signal analysis, full-stack Angular + Python web applications, and MATLAB Engine API automation.
+                        </p>
+                    </div>
+                    <div class="project-bottom">
+                        <div class="project-tags">
+                            <span>Python 3.11</span>
+                            <span>Angular</span>
+                            <span>MATLAB Engine API</span>
+                        </div>
+                        <a href="https://github.com/PelayoPacheRodriguez/uniovi-robotics-workshop-genai" target="_blank" rel="noopener noreferrer" class="project-cta-link">
+                            Source Code <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
 
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="date">2022 – Present (Expected Jun. 2027)</span>
-                            <h3>B.Sc. in Industrial Electronics and Automation Engineering</h3>
-                            <p class="company">University of Oviedo (EPI Gijón) · Spain</p>
-                            <p class="desc">
-                                Cumulative GPA: <strong>7.49 / 10.0</strong> (~3.2 US GPA / UK 2:1 Honours equivalent).<br>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= EXPERIENCE & EDUCATION TIMELINE ================= -->
+    <section id="experience" class="experience-section">
+        <div class="section-container">
+            
+            <div class="section-header">
+                <h2 class="section-title">CAREER & EDUCATION</h2>
+                <div class="separator-bar"></div>
+                <p class="section-subtitle">
+                    Academic milestones, research grants, engineering leadership, and honors.
+                </p>
+            </div>
+
+            <div class="experience-grid">
+
+                <!-- Education Column -->
+                <div class="timeline-column">
+                    <h3 class="timeline-column-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                    
+                    <div class="timeline-wrap">
+                        
+                        <div class="timeline-card">
+                            <span class="timeline-date">2022 – Present (Expected Jun. 2027)</span>
+                            <h4 class="timeline-role">B.Sc. in Industrial Electronics and Automation Engineering</h4>
+                            <p class="timeline-org">University of Oviedo (EPI Gijón) · Spain</p>
+                            <p class="timeline-desc">
+                                Cumulative GPA: <strong>7.49 / 10.0</strong> (UK 2:1 Honours / ~3.2 US GPA equivalent).<br>
                                 <strong>Bachelor's Thesis (TFG):</strong> Conducting research in direct collaboration with University of León in Aeronautical Systems.
                             </p>
                         </div>
-                    </div>
 
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="date">2025 – 2026</span>
-                            <h3>Academic Exchange Year – Faculty of Engineering</h3>
-                            <p class="company">Liverpool John Moores University (LJMU) · United Kingdom</p>
-                            <p class="desc">
-                                Academic standing: <strong>Distinction / First Class Honours</strong> (Equivalent Spanish grade: <strong>9.15 / 10.0</strong>). 
+                        <div class="timeline-card">
+                            <span class="timeline-date">2025 – 2026</span>
+                            <h4 class="timeline-role">Academic Exchange Year – Faculty of Engineering</h4>
+                            <p class="timeline-org">Liverpool John Moores University (LJMU) · United Kingdom</p>
+                            <p class="timeline-desc">
+                                Academic classification: <strong>Distinction / First Class Honours</strong> (Equivalent Spanish grade: <strong>9.15 / 10.0</strong>). 
                                 100% English curriculum focused on advanced embedded automation, sensor integration, and applied control theory.
                             </p>
                         </div>
-                    </div>
 
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="date">2020 – 2022</span>
-                            <h3>High School Diploma in Science and Technology</h3>
-                            <p class="company">Colegio Santo Domingo de Guzmán (Dominicos) · Oviedo</p>
+                        <div class="timeline-card">
+                            <span class="timeline-date">2020 – 2022</span>
+                            <h4 class="timeline-role">High School Diploma in Science and Technology</h4>
+                            <p class="timeline-org">Colegio Santo Domingo de Guzmán (Dominicos) · Oviedo</p>
                         </div>
+
                     </div>
-
-                </div>
-            </section>
-
-            <!-- SPOKEN LANGUAGES -->
-            <section class="card languages-card">
-                <h2><i class="fa-solid fa-language section-icon"></i> Languages</h2>
-                <div class="language-item">
-                    <span><strong>Spanish</strong> (Native)</span>
-                    <span class="lang-bar"><span class="lang-fill fill-100"></span></span>
-                </div>
-                <div class="language-item">
-                    <span><strong>English</strong> (C1 Full Professional Proficiency)</span>
-                    <span class="lang-bar"><span class="lang-fill fill-90"></span></span>
-                </div>
-                <div class="language-item">
-                    <span><strong>French</strong> (Elementary / A2)</span>
-                    <span class="lang-bar"><span class="lang-fill fill-30"></span></span>
-                </div>
-            </section>
-
-        </aside>
-
-
-        <!-- ================= RIGHT COLUMN ================= -->
-        <main class="right-column">
-
-            <!-- PROFILE CARD (HERO) -->
-            <section class="card profile-card">
-                <div class="profile-img-container">
-                    <img src="profile.png" alt="Pelayo Pache Rodríguez" class="profile-img">
-                    <span class="status-indicator" title="Open to engineering opportunities"></span>
                 </div>
 
-                <div class="profile-header-info">
-                    <h1>Pelayo Pache Rodríguez</h1>
-                    <p class="tagline">Industrial Electronics & Automation Engineer</p>
-                    <p class="location-badge"><i class="fa-solid fa-location-dot"></i> Oviedo & Gijón, Spain · Open to Relocation</p>
+                <!-- Professional Experience Column -->
+                <div class="timeline-column">
+                    <h3 class="timeline-column-title"><i class="fa-solid fa-briefcase"></i> Experience & Honors</h3>
+                    
+                    <div class="timeline-wrap">
+                        
+                        <div class="timeline-card">
+                            <span class="timeline-date">Sept. 2026 – Present</span>
+                            <h4 class="timeline-role">Research Collaboration Grant Fellow</h4>
+                            <p class="timeline-org">Ministry of Education & University of León</p>
+                            <p class="timeline-desc">
+                                Selected for top research project: laboratory test equipment for satellite constellation release testing in simulated microgravity.
+                            </p>
+                        </div>
+
+                        <div class="timeline-card">
+                            <span class="timeline-date">Sept. 2026 – Present</span>
+                            <h4 class="timeline-role">Co-Founder & Lead Technology Developer</h4>
+                            <p class="timeline-org">ART – Asturias Rural Tech (Top 12 Innovation Finalist)</p>
+                            <p class="timeline-desc">
+                                Executive pitch and defense before Banco Santander evaluation tribunal on November 5, 2026. Direct booking architecture eliminating 15–25% OTA commissions.
+                            </p>
+                        </div>
+
+                        <div class="timeline-card">
+                            <span class="timeline-date">Sept. 2024 – Mar. 2026</span>
+                            <h4 class="timeline-role">Hardware & Low Voltage (LV) Electronics Engineer</h4>
+                            <p class="timeline-org">Uniovi eTech-Racing (Formula Student)</p>
+                            <p class="timeline-desc">
+                                Multi-layer PCB design in Altium Designer, CAN Bus telemetry at 500 kbps, and firmware in C/C++ and VHDL (Vivado).
+                            </p>
+                        </div>
+
+                        <div class="timeline-card">
+                            <span class="timeline-date">Academic Year 2023 – 2024</span>
+                            <h4 class="timeline-role">1st Prize for Most Innovative Project</h4>
+                            <p class="timeline-org">Uniovi Innovation Skills & Tresa Ascensores</p>
+                            <p class="timeline-desc">
+                                Acquisition electronics and predictive maintenance sensor system for industrial elevators.
+                            </p>
+                        </div>
+
+                    </div>
                 </div>
 
-                <p class="bio">
-                    Engineering student passionate about <strong>Embedded Systems</strong>, <strong>Aerospace Automation</strong>, 
-                    and <strong>Hardware Design</strong>. Proven track record in multi-layer PCB design (Altium), real-time CAN Bus & microcontroller firmware (C/C++), 
-                    microgravity testbeds, and Model-Based Systems Engineering (MBSE / SysML v2).
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= CONTACT ME SECTION ================= -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            
+            <div class="section-header">
+                <h2 class="section-title">CONTACT ME</h2>
+                <div class="separator-bar"></div>
+                <p class="section-subtitle">
+                    Have an engineering opportunity, thesis collaboration, or technical project? Let's connect.
                 </p>
+            </div>
 
-                <div class="cta-actions">
-                    <a href="PelayoPacheRodriguez_CV.pdf" download="CV_PelayoPacheRodriguez.pdf" class="btn btn-primary">
-                        <i class="fa-solid fa-file-arrow-down"></i> Download Resume
-                    </a>
-                    <a href="https://linkedin.com/in/pelayo-pache-rodriguez" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                        <i class="fa-brands fa-linkedin"></i> LinkedIn
-                    </a>
-                    <a href="https://github.com/PelayoPacheRodriguez" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                        <i class="fa-brands fa-github"></i> GitHub
-                    </a>
-                </div>
-            </section>
-
-            <!-- RESEARCH & FELLOWSHIP -->
-            <section class="card research">
-                <h2><i class="fa-solid fa-satellite section-icon"></i> Research & Grants</h2>
-
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-
-                        <div class="timeline-content">
-                            <span class="date">Sept. 2026 – Present</span>
-
-                            <h3>Research Collaboration Grant Fellow</h3>
-
-                            <p class="research-institution">
-                                Ministry of Education & University of León / University of Oviedo
-                            </p>
-
-                            <p class="research-project">
-                                <strong>Spacecraft Attitude Control System (SACS) & Simulated Microgravity Testbed</strong>
-                            </p>
-
-                            <p class="research-description">
-                                Development of a laboratory test equipment bench for small satellite constellation release 
-                                testing and solar panel deployment under simulated microgravity. Engineered coupled Lagrange multi-body 
-                                dynamic equations, real-time <strong>Input Shaping (ZV/ZVD)</strong> vibration cancellation filters, 
-                                and deterministic ESP32 microsecond-level pulse generator ISRs.
-                            </p>
-
-                            <div class="project-tech">
-                                <span>Input Shaping</span>
-                                <span>ESP32</span>
-                                <span>Timer ISRs</span>
-                                <span>Autodesk Inventor API</span>
-                                <span>Python</span>
-                                <span>SysML v2</span>
-                                <span>TMC2209</span>
-                            </div>
+            <div class="contact-card-main">
+                <div class="contact-grid">
+                    
+                    <a href="mailto:pprguez2005@gmail.com" class="contact-method-box">
+                        <div class="contact-method-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-method-info">
+                            <span class="contact-method-label">Email</span>
+                            <span class="contact-method-val">pprguez2005@gmail.com</span>
                         </div>
-                    </div>
+                    </a>
+
+                    <a href="https://linkedin.com/in/pelayo-pache-rodriguez" target="_blank" rel="noopener noreferrer" class="contact-method-box">
+                        <div class="contact-method-icon"><i class="fa-brands fa-linkedin"></i></div>
+                        <div class="contact-method-info">
+                            <span class="contact-method-label">LinkedIn</span>
+                            <span class="contact-method-val">Pelayo Pache Rodríguez</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/PelayoPacheRodriguez" target="_blank" rel="noopener noreferrer" class="contact-method-box">
+                        <div class="contact-method-icon"><i class="fa-brands fa-github"></i></div>
+                        <div class="contact-method-info">
+                            <span class="contact-method-label">GitHub</span>
+                            <span class="contact-method-val">PelayoPacheRodriguez</span>
+                        </div>
+                    </a>
+
+                    <a href="tel:+34699632922" class="contact-method-box">
+                        <div class="contact-method-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contact-method-info">
+                            <span class="contact-method-label">Phone</span>
+                            <span class="contact-method-val">(+34) 699 63 29 22</span>
+                        </div>
+                    </a>
+
                 </div>
-            </section>
 
-            <!-- FEATURED PROJECTS -->
-            <section class="card projects">
-                <h2><i class="fa-solid fa-diagram-project section-icon"></i> Featured Engineering Projects</h2>
+                <div class="contact-cta-wrapper">
+                    <a href="mailto:pprguez2005@gmail.com" class="btn-tg btn-tg-primary btn-large">
+                        <i class="fa-solid fa-paper-plane"></i> Send an Email Directly
+                    </a>
+                </div>
+            </div>
 
-                <!-- PROJECT 1: Spacecraft Attitude Control System -->
-                <article class="project featured">
-                    <div class="project-header">
-                        <h3 class="project-title">
-                            <a href="https://github.com/PelayoPacheRodriguez/spacecraft-attitude-control-system" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-brands fa-github"></i>
-                                Spacecraft Attitude Control System (SACS) & Testbed
-                                <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
-                            </a>
-                        </h3>
-                        <span class="badge badge-featured">TFG / Research</span>
-                    </div>
+        </div>
+    </section>
 
-                    <p>
-                        End-to-end mechatronic design and real-time control of a 2-DOF Cartesian gantry combined with a cable-suspended 
-                        orientation platform to simulate in-orbit microgravity for CubeSat attitude determination. Features:
-                    </p>
-                    <ul class="project-bullets">
-                        <li>Real-time <strong>Input Shaping (Zero Vibration / ZVD)</strong> filters embedded in timer ISRs to eliminate residual pendular oscillations.</li>
-                        <li>100% parametric CAD chassis generation via Autodesk Inventor's native Python API (<code>adsk.inventor</code>).</li>
-                        <li>ESP32 firmware controlling Trinamic TMC2209 silent stepper drivers via UART with microsecond precision.</li>
-                        <li>Architectural requirements and traceability documented in <strong>SysML v2</strong> using OpenSpec.</li>
-                    </ul>
-
-                    <div class="project-tech">
-                        <span>C++</span>
-                        <span>ESP32</span>
-                        <span>Input Shaping (ZV/ZVD)</span>
-                        <span>Autodesk Inventor API</span>
-                        <span>Python</span>
-                        <span>TMC2209</span>
-                        <span>SysML v2</span>
-                    </div>
-                </article>
-
-                <!-- PROJECT 2: Formula Student LV Electronics -->
-                <article class="project">
-                    <div class="project-header">
-                        <h3 class="project-title">
-                            <a href="https://linkedin.com/in/pelayo-pache-rodriguez" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-solid fa-car-side"></i>
-                                Formula Student – Low Voltage (LV) Electronics & CAN Bus
-                                <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
-                            </a>
-                        </h3>
-                        <span class="badge">Motorsport</span>
-                    </div>
-
-                    <p>
-                        Hardware development and low-voltage electrical architecture for Uniovi eTech-Racing electric single-seater:
-                    </p>
-                    <ul class="project-bullets">
-                        <li>Schematic design and multi-layer PCB layout using <strong>Altium Designer</strong> conforming strictly to Formula Student rules and EMI constraints.</li>
-                    </ul>
-
-                    <div class="project-tech">
-                        <span>Altium Designer</span>
-                        <span>Multi-layer PCB</span>
-                        <span>Schematic & Routing</span>
-                        <span>Hardware Validation</span>
-                    </div>
-                </article>
-
-                <!-- PROJECT 3: Domótica ESP32-C3 -->
-                <article class="project">
-                    <div class="project-header">
-                        <h3 class="project-title">
-                            <a href="https://github.com/PelayoPacheRodriguez/Domotica-ESP32-C3" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-brands fa-github"></i>
-                                Smart Home Domotics with ESP32-C3 SuperMini
-                                <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
-                            </a>
-                        </h3>
-                        <span class="badge">IoT & Embedded</span>
-                    </div>
-
-                    <p>
-                        Modular, scalable home automation ecosystem powered by ultra-compact <strong>ESP32-C3 (RISC-V 32-bit @ 160MHz)</strong> microcontrollers:
-                    </p>
-                    <ul class="project-bullets">
-                        <li>Lightweight asynchronous embedded web server and WebSockets client for real-time telemetry streaming and appliance actuation.</li>
-                        <li>Strict specification-driven development using <strong>OpenSpec</strong> with regression protection and security boundaries.</li>
-                        <li>Power management profiling for battery and low-power IoT deployment.</li>
-                    </ul>
-
-                    <div class="project-tech">
-                        <span>ESP32-C3 (RISC-V)</span>
-                        <span>C++ (Arduino)</span>
-                        <span>WebSockets / REST</span>
-                        <span>OpenSpec</span>
-                        <span>Hardware Prototyping</span>
-                    </div>
-                </article>
-
-                <!-- PROJECT 4: SysML v2 Electric Vehicle -->
-                <article class="project">
-                    <div class="project-header">
-                        <h3 class="project-title">
-                            <a href="https://github.com/PelayoPacheRodriguez/Coche-sysml-" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-brands fa-github"></i>
-                                Electric Vehicle Systems Architecture (SysML v2)
-                                <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
-                            </a>
-                        </h3>
-                        <span class="badge">MBSE</span>
-                    </div>
-
-                    <p>
-                        Model-Based Systems Engineering (MBSE) formal specification of an electric vehicle's multidisciplinary architecture:
-                    </p>
-                    <ul class="project-bullets">
-                        <li>Structural breakdown and state-machine transitions (operation modes: off, ready, driving; battery states: charging, discharging, disconnected).</li>
-                        <li>Dynamic requirements traceability and architectural verification using <strong>SysML v2</strong> and OpenSpec change management.</li>
-                    </ul>
-
-                    <div class="project-tech">
-                        <span>SysML v2</span>
-                        <span>MBSE</span>
-                        <span>Systems Engineering</span>
-                        <span>OpenSpec</span>
-                    </div>
-                </article>
-
-                <!-- PROJECT 5: ART Booking Platform -->
-                <article class="project">
-                    <div class="project-header">
-                        <h3 class="project-title">
-                            <a href="https://github.com/pemapeast/ART-SANTADER" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-brands fa-github"></i>
-                                ART – Asturias Rural Tech Booking Engine & Web Platform
-                                <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
-                            </a>
-                        </h3>
-                        <span class="badge">Innovation Finalist</span>
-                    </div>
-
-                    <p>
-                        Web architecture and zero-commission direct reservation platform built to disintermediate 15–25% OTA fees for rural accommodations:
-                    </p>
-                    <ul class="project-bullets">
-                        <li>Engineered high-conversion responsive booking interface and local business digital footprint diagnostics (<a href="https://github.com/pemapeast/ART-HOUSES" target="_blank" rel="noopener noreferrer" style="color: var(--accent); text-decoration: underline;">ART-HOUSES</a> repository).</li>
-                        <li>Demonstrated in live commercial pilot in Pola de Laviana, boosting direct customer phone and map calls by <strong>4x</strong>.</li>
-                        <li>Ranked in the <strong>Top 12 Innovation Projects</strong> in the Uniovi Emprende startup competition (partnered with Banco Santander).</li>
-                    </ul>
-
-                    <div class="project-tech">
-                        <span>Web Architecture</span>
-                        <span>HTML5 / CSS3 / JS</span>
-                        <span>Direct Booking Engine</span>
-                        <span>Local SEO Diagnostics</span>
-                        <span>pemapeast/ART-SANTADER</span>
-                    </div>
-                </article>
-
-                <!-- PROJECT 6: CERAMIUM Commercial Transformation -->
-                <article class="project">
-                    <div class="project-header">
-                        <h3 class="project-title">
-                            <a href="https://github.com/pemapeast/CERAMIUM" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-brands fa-github"></i>
-                                CERAMIUM – Industrial Catalog & Commercial SEO Transformation
-                                <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
-                            </a>
-                        </h3>
-                        <span class="badge">Commercial Pilot</span>
-                    </div>
-
-                    <p>
-                        Operational commercial pilot developed for a traditional construction materials enterprise in Pola de Laviana (Asturias) as part of the ART initiative:
-                    </p>
-                    <ul class="project-bullets">
-                        <li>Designed complete digital catalog and mobile-first responsive web storefront.</li>
-                        <li>Comprehensive Google Maps and local SEO diagnostic overhaul, generating a verified <strong>4x surge</strong> in inbound customer inquiries.</li>
-                        <li>Integrated product portfolio with dedicated parallel catalog architectures.</li>
-                    </ul>
-
-                    <div class="project-tech">
-                        <span>Digital Architecture</span>
-                        <span>HTML5 / CSS3</span>
-                        <span>Local SEO & Google Maps</span>
-                        <span>Commercial Diagnostics</span>
-                        <span>pemapeast/CERAMIUM</span>
-                    </div>
-                </article>
-
-                <!-- PROJECT 6: Uniovi Robotics Workshop GenAI -->
-                <article class="project">
-                    <div class="project-header">
-                        <h3 class="project-title">
-                            <a href="https://github.com/PelayoPacheRodriguez/uniovi-robotics-workshop-genai" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-brands fa-github"></i>
-                                Uniovi Robotics Workshop GenAI & Automation PoCs
-                                <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
-                            </a>
-                        </h3>
-                        <span class="badge">AI & Robotics</span>
-                    </div>
-
-                    <p>
-                        Suite of robotic and signal automation proofs-of-concept demonstrating Python signal analysis, full-stack Angular + Python web applications, and MATLAB Engine API automation.
-                    </p>
-
-                    <div class="project-tech">
-                        <span>Python 3.11</span>
-                        <span>Angular</span>
-                        <span>MATLAB Engine API</span>
-                        <span>Agentic Workflows</span>
-                    </div>
-                </article>
-
-            </section>
-
-        </main>
-
-    </div>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p>© 2026 Pelayo Pache Rodríguez · Designed with clean minimalist aesthetics · Built for GitHub Pages</p>
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer-tg">
+        <div class="footer-container">
+            <a href="#" class="back-to-top" title="Back to top">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+            <p class="footer-copy">
+                © 2026 Pelayo Pache Rodríguez · Designed with inspiration from Tomasz Gajda
+            </p>
+            <div class="footer-social-links">
+                <a href="https://linkedin.com/in/pelayo-pache-rodriguez" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/PelayoPacheRodriguez" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/pemapeast" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-code-fork"></i></a>
+                <a href="mailto:pprguez2005@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
     </footer>
 
 </body>

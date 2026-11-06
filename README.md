@@ -25,16 +25,16 @@ portfolio pelayo/
    - **Left Column**: Fast-access Contact with direct LinkedIn & GitHub links, categorized Technical Stack (EDA/Hardware, Embedded & Firmware, Systems & Simulation, Software), Experience timeline, Honors/Certifications, Education, and Languages.
    - **Right Column**: Profile hero card with status badge, Research & Fellowship (Ministry of Education & Spacecraft Attitude Control microgravity bench), and detailed Featured Projects.
 2. **Deep Project & Git Integration**:
-   - [Spacecraft Attitude Control System (SACS) & Testbed](https://github.com/pprguez2005-byte/spacecraft-attitude-control-system) (TFG & Research Grant, Input Shaping ZV/ZVD, parametric CAD via Python).
+   - [Spacecraft Attitude Control System (SACS) & Testbed](https://github.com/PelayoPacheRodriguez/spacecraft-attitude-control-system) (TFG & Research Grant, Input Shaping ZV/ZVD, parametric CAD via Python).
    - [Uniovi eTech-Racing (Formula Student Electric)](https://linkedin.com/in/pelayo-pache-rodriguez) (Multi-layer PCB in Altium Designer, CAN Bus 500 kbps, VHDL Vivado).
-   - [Smart Home Domotics ESP32-C3 SuperMini](https://github.com/pprguez2005-byte/Domotica-ESP32-C3) (RISC-V 32-bit embedded web server, WebSockets, OpenSpec).
-   - [Electric Vehicle Architecture in SysML v2](https://github.com/pprguez2005-byte/Coche-sysml-) (MBSE, state machines, powertrain & battery modes).
+   - [Smart Home Domotics ESP32-C3 SuperMini](https://github.com/PelayoPacheRodriguez/Domotica-ESP32-C3) (RISC-V 32-bit embedded web server, WebSockets, OpenSpec).
+   - [Electric Vehicle Architecture in SysML v2](https://github.com/PelayoPacheRodriguez/Coche-sysml-) (MBSE, state machines, powertrain & battery modes).
    - [ART – Asturias Rural Tech Booking Platform](https://github.com/pemapeast/ART-SANTADER) (Top 12 Innovation Finalist in Uniovi Emprende & Banco Santander).
    - [CERAMIUM – Industrial Catalog & Commercial Transformation](https://github.com/pemapeast/CERAMIUM) (Commercial pilot in Pola de Laviana, achieving 4x growth in direct calls).
-   - [Uniovi Robotics Workshop GenAI](https://github.com/pprguez2005-byte/uniovi-robotics-workshop-genai) (Python, Angular, MATLAB Engine API).
+   - [Uniovi Robotics Workshop GenAI](https://github.com/PelayoPacheRodriguez/uniovi-robotics-workshop-genai) (Python, Angular, MATLAB Engine API).
 3. **LinkedIn & Socials Access**:
    - LinkedIn: [linkedin.com/in/pelayo-pache-rodriguez](https://linkedin.com/in/pelayo-pache-rodriguez)
-   - GitHub: [github.com/pprguez2005-byte](https://github.com/pprguez2005-byte)
+   - GitHub: [github.com/PelayoPacheRodriguez](https://github.com/PelayoPacheRodriguez)
    - Email: [pprguez2005@gmail.com](mailto:pprguez2005@gmail.com)
 
 ---
@@ -56,11 +56,11 @@ python -m http.server 8000
 
 You can publish this portfolio to GitHub in less than 2 minutes:
 
-### Option A: Create a Dedicated Portfolio Repository (e.g. `pprguez2005-byte.github.io`)
-This creates your main personal website URL at `https://pprguez2005-byte.github.io`:
+### Option A: Create a Dedicated Portfolio Repository (e.g. `PelayoPacheRodriguez.github.io`)
+This creates your main personal website URL at `https://PelayoPacheRodriguez.github.io`:
 
 1. Create a new repository on GitHub named:
-   **`pprguez2005-byte.github.io`** (make it Public).
+   **`PelayoPacheRodriguez.github.io`** (make it Public).
 2. In your terminal, open this directory:
    ```bash
    cd "C:\Users\Usuario\Desktop\Masters\Documentos entregar\CV\DEFINITIVO\portfolio pelayo"
@@ -71,11 +71,11 @@ This creates your main personal website URL at `https://pprguez2005-byte.github.
    git add .
    git commit -m "feat: initial release of Pelayo Pache engineering portfolio"
    git branch -M main
-   git remote add origin https://github.com/pprguez2005-byte/pprguez2005-byte.github.io.git
+   git remote add origin https://github.com/PelayoPacheRodriguez/PelayoPacheRodriguez.github.io.git
    git push -u origin main
    ```
 4. Done! Your website will be live at:
-   **`https://pprguez2005-byte.github.io`**
+   **`https://PelayoPacheRodriguez.github.io`**
 
 ### Option B: Deploy inside a `portfolio` repository
 1. Create a repository on GitHub named `portfolio` (Public).
@@ -85,9 +85,9 @@ This creates your main personal website URL at `https://pprguez2005-byte.github.
    git add .
    git commit -m "feat: engineering portfolio website"
    git branch -M main
-   git remote add origin https://github.com/pprguez2005-byte/portfolio.git
+   git remote add origin https://github.com/PelayoPacheRodriguez/portfolio.git
    git push -u origin main
    ```
 3. In GitHub, go to **Settings > Pages** -> select Branch **`main`** / Folder **`/(root)`** -> Click **Save**.
 4. Your website will be available at:
-   `https://pprguez2005-byte.github.io/portfolio/`
+   `https://PelayoPacheRodriguez.github.io/portfolio/`
